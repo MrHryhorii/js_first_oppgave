@@ -9,6 +9,21 @@ javascript.js
 ******************************************************************************/
 
 // Løs denne oppgaven i index.html
+const output = document.getElementById("output");
+
+// function for double log
+const log = (message) => {
+    console.log(message); // show in console
+    //
+    const p = document.createElement("p"); // show on page
+    p.textContent = message;
+    output.appendChild(p);
+};
+
+// create "hr" tag in output div
+const separator = () => {
+    output.appendChild(document.createElement("hr"));
+};
 
 /******************************************************************************
 OPPGAVE 2
@@ -25,6 +40,18 @@ const når du definerer variablene.
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
+let crimeText = "Hei, verden!";
+const omniAnswer = 42;
+let isSolved = true;
+const stolenList = [1, 2, 3, 4];
+
+log("String (Tekst): " + crimeText);
+log("Number (Tall): " + omniAnswer);
+log("Boolean: " + isSolved);
+log("Array: " + stolenList.join(", "));
+
+//
+separator();
 
 /******************************************************************************
 OPPGAVE 3
