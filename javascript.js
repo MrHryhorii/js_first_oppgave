@@ -123,6 +123,8 @@ if (userName !== "" && userAge >= 18 && !userIsBlocked) {
 else {
     log("Error: Name is missing, user is underage, or user is blocked.");
 }
+//
+separator();
 
 /******************************************************************************
 OPPGAVE 5
@@ -142,3 +144,8 @@ at betingelsen din fungerer som den skal.
 const userMale = false;
 
 // Skriv koden for oppgave 5 her
+let maleGender = userMale;
+maleGender = true;
+
+const userTitle = maleGender ? "Mr." : "Mrs.";
+log("User title: " + userTitle);
