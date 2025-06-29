@@ -113,6 +113,16 @@ let userIsBlocked = false;
 let goToPage = "";
 
 // Skriv koden for oppgave 4 her
+userName = "John"
+
+if (userName !== "" && userAge >= 18 && !userIsBlocked) {
+    userIsLoggedIn = true;
+    goToPage = "/home";
+    log(`Welcome, ${userName}! You are logged in. Redirecting to: ${goToPage}`);
+} 
+else {
+    log("Error: Name is missing, user is underage, or user is blocked.");
+}
 
 /******************************************************************************
 OPPGAVE 5
