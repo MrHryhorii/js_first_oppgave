@@ -49,7 +49,6 @@ log("String (Tekst): " + crimeText);
 log("Number (Tall): " + omniAnswer);
 log("Boolean: " + isSolved);
 log("Array: " + stolenList.join(", "));
-
 //
 separator();
 
@@ -64,6 +63,27 @@ Skriv noen eksempler der du tester disse operatorene.
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
+let a = 16;
+let b = 8;
+log("let a = " + a);
+log("let b = " + b);
+
+log("a + b = " + (a + b));
+log("a - b = " + (a - b));
+log("a * b = " + (a * b));
+log("a / b = " + (a / b));
+
+a++;
+b--;
+log("a after ++: " + a);
+log("b after --: " + b);
+
+a += 25;
+b -= 21;
+log("a after += 25: " + a);
+log("b after -= 21: " + b);
+//
+separator();
 
 /******************************************************************************
 OPPGAVE 4
